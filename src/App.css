@@ -1,0 +1,152 @@
+.App {
+  max-width: 700px;
+  margin: 32px auto;
+  padding: 24px 12px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(30, 41, 59, 0.07);
+}
+
+h2 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.08rem;
+  margin-bottom: 18px;
+}
+
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 0 auto 24px auto;
+  width: 90%;
+  border-radius: 2px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.toggle-button {
+  padding: 10px 22px;
+  border: 1.5px solid #2563eb;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f1f5fd;
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+
+.toggle-button.active,
+.toggle-button:hover {
+  background-color: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+.dropdown {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 0 auto 26px auto;
+  padding: 10px 14px;
+  border-radius: 7px;
+  border: 1.5px solid #2563eb;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #1e293b;
+  outline: none;
+  transition: border 0.18s;
+}
+
+.dropdown:focus {
+  border-color: #1d4ed8;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.08);
+  padding: 16px 20px;
+  min-width: 140px;
+  max-width: 180px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.18s, transform 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card:hover {
+  box-shadow: 0 6px 18px rgba(30, 41, 59, 0.13);
+  transform: translateY(-2px) scale(1.03);
+  border-color: #2563eb;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 6px;
+  word-break: break-word;
+}
+
+.card-count {
+  font-size: 0.92rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.empty-state {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+  font-size: 1.08rem;
+}
+
+.highlight {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px 2px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .card {
+    width: 90%;
+    min-width: unset;
+    max-width: unset;
+    padding: 14px 12px;
+  }
+  .dropdown {
+    max-width: 100%;
+  }
+}
